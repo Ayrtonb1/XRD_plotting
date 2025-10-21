@@ -145,7 +145,7 @@ def plot_3d_xrd_publication(processed, save_path=None):
 
 # === Main runner ===
 if __name__ == "__main__":
-    output_folder = r"C:\Users\Ayrton\Documents\XRD"
+    output_folder = os.path.join(os.getcwd(), "XRD_Output")
     os.makedirs(output_folder, exist_ok=True)
 
     # Load XRD files
